@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Rasenthiram Thanakaran – Software Engineer</title>
+<meta name="description" content="Premium portfolio of Rasenthiram Thanakaran, Software Engineer specializing in React, Spring Boot, and Mobile Development."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<!-- Custom Cursor -->
+<div id="cursor"></div>
+<div id="cursor-trail"></div>
+
+<!-- Scroll Progress -->
+<div id="scroll-progress"></div>
+
+<!-- Particle Canvas -->
+<canvas id="particles-canvas"></canvas>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="#hero" class="nav-logo">RT</a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#achievements">Achievements</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="menu-btn" id="menuBtn">&#9776;</button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about" class="mob-link">About</a>
+    <a href="#skills" class="mob-link">Skills</a>
+    <a href="#experience" class="mob-link">Experience</a>
+    <a href="#projects" class="mob-link">Projects</a>
+    <a href="#achievements" class="mob-link">Achievements</a>
+    <a href="#contact" class="mob-link">Contact</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg-orb orb1"></div>
+  <div class="hero-bg-orb orb2"></div>
+  <div class="hero-bg-orb orb3"></div>
+  <div class="floating-code code1">&lt;React /&gt;</div>
+  <div class="floating-code code2">{ SpringBoot }</div>
+  <div class="floating-code code3">const dev = () =&gt; &#128640;</div>
+  <div class="floating-code code4">npm run build</div>
+  <div class="floating-code code5">git push origin main</div>
+  <div class="hero-content">
+    <div class="hero-badge reveal">&#127775; Available for Opportunities</div>
+    <h1 class="hero-name reveal">Rasenthiram<br/><span class="gradient-text">Thanakaran</span></h1>
+    <div class="hero-roles reveal">
+      <span class="role-prefix">I'm a </span>
+      <span class="typing-text" id="typingText"></span><span class="cursor-blink">|</span>
+    </div>
+    <p class="hero-desc reveal">Passionate Software Engineering undergraduate focused on building modern web and mobile experiences with <span class="highlight">React</span>, <span class="highlight">Spring Boot</span>, and <span class="highlight">scalable technologies</span>.</p>
+    <div class="hero-cta reveal">
+      <a href="#projects" class="btn-primary">View Projects</a>
+      <a href="Thanakaran_s__CV.pdf" download class="btn-secondary">Download CV</a>
+      <a href="#contact" class="btn-ghost">Contact Me</a>
+    </div>
+  </div>
+  <div class="hero-profile reveal">
+    <div class="profile-glow-ring">
+      <div class="profile-inner">
+        <img src="WhatsApp Image 2026-05-13 at 00.14.25.jpeg" alt="Rasenthiram Thanakaran" class="profile-img"/>
+      </div>
+    </div>
+    <div class="profile-badge badge-react">React.js</div>
+    <div class="profile-badge badge-spring">Spring Boot</div>
+    <div class="profile-badge badge-rn">React Native</div>
+  </div>
+  <div class="scroll-indicator">
+    <div class="scroll-dot"></div>
+    <span>Scroll Down</span>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+  <div class="section-tag reveal">WHO I AM</div>
+  <h2 class="section-title reveal">About <span class="gradient-text">Me</span></h2>
+  <div class="about-grid">
+    <div class="about-text reveal">
+      <p>I'm a <strong>Software Engineering undergraduate</strong> at the University of Moratuwa, Sri Lanka — one of the country's most prestigious tech universities. With a deep passion for building beautiful, functional digital products, I specialize in <span class="highlight">React.js</span>, <span class="highlight">React Native</span>, and <span class="highlight">Spring Boot</span>.</p>
+      <p>I recently completed a <strong>Software Engineer Internship</strong> at EPR Groupers (Pvt) Ltd, where I built responsive UI components, implemented state management systems, and delivered dynamic multi-step forms used in production.</p>
+      <p>I thrive at the intersection of <strong>elegant design</strong> and <strong>clean engineering</strong>, creating experiences that are both technically sound and visually compelling.</p>
+      <div class="about-info-row">
+        <div class="info-item"><span class="info-label">🎓 University</span><span>University of Moratuwa</span></div>
+        <div class="info-item"><span class="info-label">📍 Location</span><span>Colombo, Sri Lanka</span></div>
+        <div class="info-item"><span class="info-label">📧 Email</span><span>rasenthiramthana2399@gmail.com</span></div>
+        <div class="info-item"><span class="info-label">📞 Phone</span><span>+94 77 629 6517</span></div>
+      </div>
+    </div>
+    <div class="about-stats reveal">
+      <div class="stat-card"><div class="stat-num" data-target="3">0</div><div class="stat-label">Years Learning</div></div>
+      <div class="stat-card"><div class="stat-num" data-target="3">0</div><div class="stat-label">Projects Built</div></div>
+      <div class="stat-card"><div class="stat-num" data-target="12">0</div><div class="stat-label">Technologies</div></div>
+      <div class="stat-card"><div class="stat-num" data-target="1">0</div><div class="stat-label">Internship</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section">
+  <div class="section-tag reveal">WHAT I KNOW</div>
+  <h2 class="section-title reveal">Technical <span class="gradient-text">Skills</span></h2>
+  <div class="skills-categories reveal">
+    <div class="skill-category">
+      <h3 class="cat-title">Frontend</h3>
+      <div class="skill-grid">
+        <div class="skill-card" style="--clr:#61DAFB"><div class="skill-icon">⚛️</div><span>React.js</span></div>
+        <div class="skill-card" style="--clr:#8B5CF6"><div class="skill-icon">📱</div><span>React Native</span></div>
+        <div class="skill-card" style="--clr:#E34F26"><div class="skill-icon">🌐</div><span>HTML</span></div>
+        <div class="skill-card" style="--clr:#1572B6"><div class="skill-icon">🎨</div><span>CSS</span></div>
+        <div class="skill-card" style="--clr:#F7DF1E"><div class="skill-icon">⚡</div><span>JavaScript</span></div>
+      </div>
+    </div>
+    <div class="skill-category">
+      <h3 class="cat-title">Backend</h3>
+      <div class="skill-grid">
+        <div class="skill-card" style="--clr:#6DB33F"><div class="skill-icon">🍃</div><span>Spring Boot</span></div>
+        <div class="skill-card" style="--clr:#ED8B00"><div class="skill-icon">☕</div><span>Java</span></div>
+        <div class="skill-card" style="--clr:#3776AB"><div class="skill-icon">🐍</div><span>Python</span></div>
+        <div class="skill-card" style="--clr:#A8B9CC"><div class="skill-icon">⚙️</div><span>C</span></div>
+      </div>
+    </div>
+    <div class="skill-category">
+      <h3 class="cat-title">Database & Tools</h3>
+      <div class="skill-grid">
+        <div class="skill-card" style="--clr:#4479A1"><div class="skill-icon">🗄️</div><span>MySQL</span></div>
+        <div class="skill-card" style="--clr:#F05032"><div class="skill-icon">🔀</div><span>Git</span></div>
+        <div class="skill-card" style="--clr:#181717"><div class="skill-icon">🐙</div><span>GitHub</span></div>
+        <div class="skill-card" style="--clr:#007ACC"><div class="skill-icon">💻</div><span>VS Code</span></div>
+        <div class="skill-card" style="--clr:#FF6C37"><div class="skill-icon">📬</div><span>Postman</span></div>
+        <div class="skill-card" style="--clr:#000000"><div class="skill-icon">🧠</div><span>IntelliJ</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="skill-bars reveal">
+    <h3 class="bars-title">Proficiency</h3>
+    <div class="bar-item"><span>React.js</span><div class="bar-track"><div class="bar-fill" data-w="90"></div></div><span>90%</span></div>
+    <div class="bar-item"><span>JavaScript</span><div class="bar-track"><div class="bar-fill" data-w="85"></div></div><span>85%</span></div>
+    <div class="bar-item"><span>Spring Boot</span><div class="bar-track"><div class="bar-fill" data-w="78"></div></div><span>78%</span></div>
+    <div class="bar-item"><span>React Native</span><div class="bar-track"><div class="bar-fill" data-w="80"></div></div><span>80%</span></div>
+    <div class="bar-item"><span>MySQL</span><div class="bar-track"><div class="bar-fill" data-w="75"></div></div><span>75%</span></div>
+    <div class="bar-item"><span>Java</span><div class="bar-track"><div class="bar-fill" data-w="80"></div></div><span>80%</span></div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="section">
+  <div class="section-tag reveal">MY JOURNEY</div>
+  <h2 class="section-title reveal">Work <span class="gradient-text">Experience</span></h2>
+  <div class="timeline">
+    <div class="timeline-line"></div>
+    <div class="timeline-item reveal">
+      <div class="timeline-dot"></div>
+      <div class="timeline-card">
+        <div class="tl-header">
+          <div>
+            <h3 class="tl-title">Software Engineer Intern</h3>
+            <p class="tl-company">EPR Groupers (Pvt) Ltd</p>
+            <p class="tl-location">📍 Colombo, Sri Lanka</p>
+          </div>
+          <div class="tl-date">Apr 2025 – Oct 2025</div>
+        </div>
+        <ul class="tl-points">
+          <li>Built responsive and reusable UI components using React with high code reusability</li>
+          <li>Implemented state management for dynamic data handling across the application</li>
+          <li>Ensured cross-device compatibility using Bootstrap, Flexbox, CSS Grid, and media queries</li>
+          <li>Integrated form validation and user notifications to improve user experience</li>
+          <li>Developed multi-step dynamic forms for complex input workflows</li>
+          <li>Created sortable and searchable data tables with action controls</li>
+          <li>Maintained UI consistency using Material UI component library</li>
+        </ul>
+        <div class="tl-tags">
+          <span>React.js</span><span>Material UI</span><span>Bootstrap</span><span>JavaScript</span><span>CSS Grid</span>
+        </div>
+      </div>
+    </div>
+    <div class="timeline-item reveal">
+      <div class="timeline-dot"></div>
+      <div class="timeline-card">
+        <div class="tl-header">
+          <div>
+            <h3 class="tl-title">B.Sc. (Hons) Information Technology</h3>
+            <p class="tl-company">University of Moratuwa</p>
+            <p class="tl-location">📍 Colombo, Sri Lanka</p>
+          </div>
+          <div class="tl-date">2022 – 2026</div>
+        </div>
+        <p class="tl-desc">Pursuing a Bachelor's degree in Information Technology at one of Sri Lanka's top engineering universities, focusing on software engineering, web development, and mobile applications.</p>
+        <div class="tl-tags">
+          <span>Software Engineering</span><span>Web Dev</span><span>Mobile Apps</span><span>Databases</span>
+        </div>
+      </div>
+    </div>
+    <div class="timeline-item reveal">
+      <div class="timeline-dot"></div>
+      <div class="timeline-card">
+        <div class="tl-header">
+          <div>
+            <h3 class="tl-title">G.C.E. Advanced Level</h3>
+            <p class="tl-company">J/Chavakachcheri Hindu College</p>
+            <p class="tl-location">📍 Chavakachcheri, Sri Lanka</p>
+          </div>
+          <div class="tl-date">2015 – 2018</div>
+        </div>
+        <p class="tl-desc">Physical Science Stream — Result: <strong>1A, 1B, 1C</strong> | Z-Score: <strong>1.4569</strong></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section">
+  <div class="section-tag reveal">WHAT I BUILT</div>
+  <h2 class="section-title reveal">Featured <span class="gradient-text">Projects</span></h2>
+  <div class="projects-grid">
+
+    <div class="project-card reveal" style="--accent:#8B5CF6">
+      <div class="project-glow"></div>
+      <div class="project-number">01</div>
+      <div class="project-header">
+        <h3>LabourLINK</h3>
+        <p class="project-subtitle">Labour Hiring System</p>
+      </div>
+      <p class="project-desc">A full-stack platform connecting labourers and customers with real-time booking, Google Maps integration, in-app messaging, and push notifications. Built as a 2nd Year Software Engineering project.</p>
+      <ul class="project-features">
+        <li>🗺️ Google Maps Integration for live labour discovery</li>
+        <li>💬 In-app messaging & push notifications</li>
+        <li>🔐 RBAC authentication system</li>
+        <li>📅 Booking workflow with date/time confirmation</li>
+        <li>📊 Profile comparison & job role filtering</li>
+      </ul>
+      <div class="project-tech">
+        <span>React.js</span><span>React Native</span><span>Spring Boot</span><span>MySQL</span>
+      </div>
+      <div class="project-links">
+        <a href="https://github.com/R-Thanakaran" target="_blank" class="proj-btn">GitHub ↗</a>
+      </div>
+    </div>
+
+    <div class="project-card reveal" style="--accent:#06B6D4">
+      <div class="project-glow"></div>
+      <div class="project-number">02</div>
+      <div class="project-header">
+        <h3>Milk Quality Checker</h3>
+        <p class="project-subtitle">IoT Hardware System</p>
+      </div>
+      <p class="project-desc">A smart IoT system that monitors and ensures fresh milk quality using multiple sensor technologies. Automated milk flow control based on real-time quality analysis. Built as a 1st Year Hardware Project.</p>
+      <ul class="project-features">
+        <li>🧪 pH, temperature, gas & color sensors</li>
+        <li>⚙️ Automated milk flow through quality tanks</li>
+        <li>🎛️ Keypad & IR sensor for quantity selection</li>
+        <li>📐 Custom PCB design</li>
+        <li>🤖 Real-time quality algorithm</li>
+      </ul>
+      <div class="project-tech">
+        <span>C</span><span>Arduino Mega 2560</span><span>ESP32</span><span>PCB Design</span>
+      </div>
+      <div class="project-links">
+        <a href="https://github.com/R-Thanakaran" target="_blank" class="proj-btn">GitHub ↗</a>
+      </div>
+    </div>
+
+    <div class="project-card reveal" style="--accent:#EC4899">
+      <div class="project-glow"></div>
+      <div class="project-number">03</div>
+      <div class="project-header">
+        <h3>Movie Booking App</h3>
+        <p class="project-subtitle">Cross-Platform Mobile App</p>
+      </div>
+      <p class="project-desc">A fully cross-platform movie booking mobile application with real-time features, smooth UI, and a Spring Boot backend. Showcases modern mobile UI/UX patterns and responsive design across devices.</p>
+      <ul class="project-features">
+        <li>🎬 Latest Movies real-time feed</li>
+        <li>❤️ Favourite movies wishlist</li>
+        <li>📱 Cross-platform (iOS & Android)</li>
+        <li>🎨 Responsive mobile-first UI</li>
+        <li>⚡ Spring Boot REST API backend</li>
+      </ul>
+      <div class="project-tech">
+        <span>React Native</span><span>Spring Boot</span><span>REST API</span>
+      </div>
+      <div class="project-links">
+        <a href="https://github.com/R-Thanakaran" target="_blank" class="proj-btn">GitHub ↗</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ACHIEVEMENTS -->
+<section id="achievements" class="section">
+  <div class="section-tag reveal">RECOGNITION</div>
+  <h2 class="section-title reveal">Achievements &amp; <span class="gradient-text">Awards</span></h2>
+  <div class="achievements-grid">
+    <div class="achievement-card reveal">
+      <div class="ach-icon">🏆</div>
+      <h3>XTREME 2023</h3>
+      <p class="ach-org">IESL UOM / IESL YMS</p>
+      <p class="ach-desc">Competed in the prestigious XTREME hackathon, collaborating with a team to build an innovative software solution under tight time constraints.</p>
+      <div class="ach-badge">Hackathon Participant</div>
+    </div>
+    <div class="achievement-card reveal">
+      <div class="ach-icon">🥇</div>
+      <h3>ENIGMA '24</h3>
+      <p class="ach-org">University Hackathon 2024</p>
+      <p class="ach-desc">Participated in ENIGMA '24, demonstrating strong problem-solving skills, rapid prototyping ability, and technical leadership under pressure.</p>
+      <div class="ach-badge">Hackathon Participant</div>
+    </div>
+    <div class="achievement-card reveal">
+      <div class="ach-icon">🎓</div>
+      <h3>Dean's Cohort</h3>
+      <p class="ach-org">University of Moratuwa</p>
+      <p class="ach-desc">Maintained strong academic performance throughout the B.Sc. Information Technology programme at one of Sri Lanka's top-ranked universities.</p>
+      <div class="ach-badge">Academic Excellence</div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+  <div class="section-tag reveal">LET'S TALK</div>
+  <h2 class="section-title reveal">Get In <span class="gradient-text">Touch</span></h2>
+  <p class="contact-subtitle reveal">I'm currently open to internship and junior software engineer roles. Feel free to reach out!</p>
+  <div class="contact-grid">
+    <div class="contact-info reveal">
+      <div class="contact-card">
+        <div class="contact-icon">📧</div>
+        <div><p class="c-label">Email</p><a href="mailto:rasenthiramthana2399@gmail.com">rasenthiramthana2399@gmail.com</a></div>
+      </div>
+      <div class="contact-card">
+        <div class="contact-icon">📞</div>
+        <div><p class="c-label">Phone</p><a href="tel:+94776296517">+94 77 629 6517</a></div>
+      </div>
+      <div class="contact-card">
+        <div class="contact-icon">🐙</div>
+        <div><p class="c-label">GitHub</p><a href="https://github.com/R-Thanakaran" target="_blank">R-Thanakaran</a></div>
+      </div>
+      <div class="contact-card">
+        <div class="contact-icon">💼</div>
+        <div><p class="c-label">LinkedIn</p><a href="https://linkedin.com/in/thanalaran-rasenthiram" target="_blank">Thanalaran Rasenthiram</a></div>
+      </div>
+    </div>
+    <form class="contact-form reveal" id="contactForm">
+      <div class="form-group">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" placeholder="John Doe" required/>
+      </div>
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" placeholder="john@example.com" required/>
+      </div>
+      <div class="form-group">
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" placeholder="Job Opportunity / Collaboration"/>
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" rows="5" placeholder="Tell me about the opportunity..." required></textarea>
+      </div>
+      <button type="submit" class="btn-primary full-width" id="submitBtn">Send Message ✈️</button>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="footer">
+  <div class="footer-inner">
+    <div class="footer-logo">RT</div>
+    <p class="footer-tagline">Building tomorrow's web, one component at a time.</p>
+    <div class="footer-social">
+      <a href="mailto:rasenthiramthana2399@gmail.com" title="Email">📧</a>
+      <a href="https://github.com/R-Thanakaran" target="_blank" title="GitHub">🐙</a>
+      <a href="https://linkedin.com/in/thanalaran-rasenthiram" target="_blank" title="LinkedIn">💼</a>
+    </div>
+    <p class="footer-copy">© 2025 Rasenthiram Thanakaran. Crafted with ❤️ and lots of ☕</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
